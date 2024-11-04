@@ -1,0 +1,177 @@
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+/* this is the first class */
+.logo {
+    font-size:   24px;
+    font-weight: bold;
+    color:     white;
+}
+/* the header class of the titlw */
+ header {          
+     display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #0f5715;
+}
+ header .logo h1 {
+     margin: 0;
+     font-size: 2rem;
+}
+/* Hide the menu initially (will be displayed when clicking the icon) */
+.navbar {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #2E7D32;
+    width: 200px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(214, 86, 86, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.intro {
+    text-align: center;
+}
+/* Custom CSS for Bootstrap row */
+main {
+    padding: 20px;
+    background-color: #3ca13f;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.flowers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flower-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Crops the image to fit within a square */
+}
+
+footer {
+    background-color:#888094;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* about search button  */
+.search-button {
+    align-items: right;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+
+}
+/* about the button of random flowers */
+button {
+    padding: 10px 15px;
+    background-color: #0f5715;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #121413; /* Medium Sea Green */
+}
+/* Styling for menu items */
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu li {
+    padding: 10px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+ul.menu li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Three-line icon styling */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(22, 15, 15);
+}
+
+/* For scrolling effect */
+.navbar ul.menu {
+    max-height: 200px; /* Adjust based on how many items you want visible before scrolling */
+    overflow-y: auto; /* Enables scrolling */
+}
+
+/* Responsive Menu for mobile view */
+@media (min-width: 768px) {
+    .navbar {
+        display: block; /* Show the menu in larger screens */
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow:none;
+    }
+
+     ul.menu {
+        display: flex; /* Show menu items inline for larger screens */
+        gap: 20px;
+    }
+
+    ul.menu li {
+        padding: 100;
+    }
+
+    .menu-icon {
+        display: none; /* Hide the hamburger menu icon on larger screens */
+    }
+
+    .carousel-half
+ {
+text-decoration: double;
+ }
